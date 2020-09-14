@@ -1,0 +1,8 @@
+<form action="http://localhost:3000/process" method="POST">
+  <p><input type="text" name="title"></p>
+  <p><textarea name="description"></textarea></p>
+  <p><input type="submit"></p>
+</form>
+
+<!-- * method를 지정하지 않고 submit하면  process?title={}&description={} 쿼리 스트링이 생성-->
+<!-- * method="POST"로 지정하면 submit했을 때 /process로 연결한 후 쿼리스트링 생성 안함 -->
